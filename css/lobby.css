@@ -1,0 +1,117 @@
+.hero_section {
+    padding: 3% 0;
+    margin-top: 74px;
+    background-color: #262625;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero_section h2 {
+    padding-left: 5%;
+    flex-basis: 40%;
+    line-height: 1.1;
+    font-size: 4.2rem;
+    font-weight: 700;
+    display: flex;
+    text-shadow: 2px 2px 10px yellow;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero_section_img img {
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-left: 70px;
+}
+
+#room_listTitle {
+    font-size: 2rem;
+    border-bottom: 1px solid #262625;
+    padding-bottom: 1rem;
+}
+
+#room_container {
+    display: flex;
+    margin-right: -2.1rem;
+    row-gap: 2.5rem;
+    column-gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.room_item {
+    flex-basis: calc(100% / 4 - 2.5rem);
+    border: 3px solid yellow;
+    border-radius: 30%;
+}
+
+.room_title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: yellow;
+    text-shadow: 2px 2px 10px yellow;
+    margin-bottom: 1rem;
+}
+
+.room_author .avatar_md{
+    width: 10%;
+    height: 10%;
+}
+
+.room_item img{
+    height: 50%;
+    width: 100%;
+}
+
+.message_author {
+    font-size: 1.7rem;
+    font-weight: 300;
+    justify-content: space-around;
+    padding-left: 25px;
+}
+
+.room_action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 6rem;
+    text-align: center;
+    background-color: yellow;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+@media (max-width: 1600px) {
+    .room_item {
+        flex-basis: calc(100% / 3 - 2.5rem);
+        justify-self: flex-start;
+    }
+}
+
+@media (max-width: 1200px) {
+    #room_container {
+        margin-right: -1.5rem;
+    }
+
+    .room_item {
+        flex-basis: calc(100% / 2 - 2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    #room_container {
+        margin-right: 0rem;
+    }
+
+    .room_item {
+        flex-basis: 100%;
+    }
+}

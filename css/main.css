@@ -1,0 +1,170 @@
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #797a79;
+    border-radius: 10px;
+}
+
+::webkit-scroll-thummb:hover {
+    background: yellow;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: yellow;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p,a {
+    font-weight: 300;
+}
+
+.avatar_md {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar_sm {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#nav {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   box-sizing: border-box;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid #000000;
+   background-color: #1a1a1a;
+   text-decoration: none;
+   padding: 16px 5%;
+   z-index: 999;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 0;
+    margin: 0;
+    color: #ebe0e0;
+}
+
+@media (max-width: 640px) {
+    #logo {
+        display: none;
+    }
+}
+
+#logo img {
+    height: 42px;
+}
+
+#nav a{
+    text-decoration: none;
+}
+
+#nav_links {
+    display: flex;
+    align-items: center;
+    column-gap: 2em;
+}
+
+.nav_links {
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 1px;
+}
+
+@media (max-width: 520px) {
+    #nav_links {
+        column-gap: 3em;
+    }
+}
+
+.nav_links:hover {
+    color: rgb(230, 228, 228);
+    text-decoration: none;
+    border-color: yellow;
+}
+
+#create_room_btn {
+    display: block;
+    background-color: yellow;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+#create_room_btn:hover {
+    background-color: yellow;
+}
+
+.nav--list {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#members_button,
+#chat_button {
+    display: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+#members_button:hover svg > path,
+#chat_button:hover svg > path,
+.nav_link:hover svg {
+    fill: yellow;
+}
+
+.nav_link svg {
+    width: 0;
+    height: 0;
+}
+
+@media (max-width: 640px) {
+    #members_button {
+        display: block;
+    }
+
+    .nav_link svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .nav_link,
+    #create_room_btn {
+        font-size: 0;
+        border: none;
+    }
+
+    #create_room_btn {
+        padding: 0;
+        background-color: transparent;
+        border-radius: 50%;
+    }
+
+    #create_room_btn:hover {
+        background-color: transparent;
+    }
+}

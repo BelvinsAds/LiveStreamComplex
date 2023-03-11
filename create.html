@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--https://www.youtube.com/watch?v=QvNzL_FmzLQ&t=424s-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/join.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="nav">
+        <div class="nav--list">
+            <button id="members_button">
+                <svg width="24" height="24" xmls="http://www.w3.org/2000/svg" fill-rule="evenodd"></svg>
+            </button>
+            <a href="/lobby.html">
+                <h3 id="logo">
+                    <img src="images/HOF logo .PNG" alt="Site Logo">
+                    <span>House of Fitness</span>
+                </h3>
+            </a>
+        </div>
+
+        <div id="nav_links">
+            <button id="chat_button"><svg width="24" height="24" xmls="http://www.w3.org/2000/svg"></svg></button>
+            <a href="/lobby.html" class="nav_links">
+                Lobby
+                <svg width="24" height="24" xmls="http://www.w3.org/2000/svg" fill="#ede0e0"></svg>
+            </a>
+            <a href="create.html" class="nav_link" id="create_room_btn">
+                Create Room
+                <svg width="24" height="24" xmls="http://www.w3.org/2000/svg" fill="#ede0e0"></svg>
+            </a>
+        </div>
+    </header>
+    
+    
+    <main id="join_container">
+        <div id="form_container">
+            <div id="form_container_header">
+                <p>Join Room</p>
+            </div>
+
+            <form id="lobby_form">
+                <div class="form_field_wrapper">
+                    <label>Your Name</label>
+                    <input type="text" name="name" id="" placeholder="Enter your name..." required/>
+                </div>
+                <div class="form_field_wrapper">
+                    <label>Room Name</label>
+                    <input type="text" name="room" id="" placeholder="Enter your name..." required/>
+                </div>
+
+                <div class="form_field_wrapper">
+                    <label>Select Avatar</label>
+                    <div id="avatar_selection">
+                        <img src="Images/1.png" alt="" class="avatar_option">
+                        <img src="Images/2.png" alt="" class="avatar_option">
+                        <img src="Images/3.png" alt="" class="avatar_option">
+                        <img src="Images/4.png" alt="" class="avatar_option">
+                        <img src="Images/5.png" alt="" class="avatar_option">
+                        <img src="Images/6.png" alt="" class="avatar_option">
+                        <img src="Images/7.png" alt="" class="avatar_option">
+                    </div>
+                </div>
+
+                <div class="form_field_wrapper">
+                    <button type="submit">Join Room
+                        <svg xmls="http://www.w3.org/2000/svg" width="24" height="24"></svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+</body>
+<script src="js/agora-rtm-sdk-1.5.1.js"></script>
+<script src="js/create.js"></script>
+</html>
