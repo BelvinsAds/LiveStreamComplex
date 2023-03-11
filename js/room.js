@@ -2,7 +2,7 @@ let messagesContainer = document.getElementById('messages_container')
 messagesContainer.scrollTop = messagesContainer.scrollHeight;
 
 
-let appID = "8e149cda1cab45e89639ff5348e063cc"
+let appID = "APPID"
 let token = null;
 let uid = sessionStorage.getItem('rtmUID')
 if(uid === null || uid === undefined){
